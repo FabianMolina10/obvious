@@ -12,15 +12,17 @@ body.home .hero .wrap {
     height:100%;
     margin: 0 auto;
     
-    @media only screen and (min-width: 1170px) {
-        max-width:940px;
+   
+    
+    @media @min-md {
+        max-width: 720px;
     }
     
-    @media @md {
-        max-width: 920px;
+    @media @min-lg {
+        max-width: 940px;
     }
     
-    @media @lg {
+    @media @min-xl {
     //    max-width: 1200px;
        max-width:1020px;
     }
@@ -30,26 +32,59 @@ body.home .hero .wrap {
         max-width:1200px;
     }
 }
-body.home .wrap {
-    
-}
 
 body.home .hero .hero-text {
     position: relative;
+    z-index:9999999;
     top: 50%;
     
     -webkit-transform: translateY(-86%);
     transform: translateY(-86%);
     
-    @media @sm {
+    @media @min-md {
         -webkit-transform: translateY(-106%);
         transform: translateY(-106%);
         text-align:center;
     }
     
-    @media @md {
+    @media @min-lg {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    text-align:left;
+    }
+}
+
+body.home .hero h1 {
+    color: #fff;
+    text-align:  center;
+    font-weight:700;
+    // font-size:4.5em;
+    letter-spacing: 4px;
+    // padding:30px;
+    
+    @media @min-md {
+        // font-size: 4px;
+        text-align:left;
+    }
+    
+    @media @min-lg {
+        text-align: left;
+        // font-size: 7.5rem;
+    }
+}
+
+body.home .hero p {
+    color : #fff;
+    margin: 0 auto;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 100;
+    max-width: 850px;
+    letter-spacing: 0.10em;
+    font-weight: 500;
+    @media @min-lg {
+        margin-left:30px;
+        text-align: left;
     }
 }
 
@@ -57,7 +92,7 @@ body.home .hero .phones {
     text-align: center;
     left:20px;
     
-    @media @md {
+    @media @min-md {
         text-align: right;
     }
     
@@ -66,12 +101,25 @@ body.home .hero .phones {
 body.home .hero .phones img {
     max-height:360px;
     max-height:42vh;
-    @media @lg {
+    @media @min-lg {
         max-height:500px;
     }
     
-    @media @lg {
-        max-height:640px;
+    @media @min-lg {
+        max-height:440px;
     }
     
+}
+
+
+.awrds p {
+    font-size:0.75rem;
+}
+
+#engage-customers .best-in-class {
+    text-align: center;
+}
+
+#engage-customers .best-in-class img {
+    max-width:240px;
 }

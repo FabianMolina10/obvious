@@ -46,9 +46,10 @@ h2 {
 h3 {
   font-weight:600;
   font-size: @font-h3;
-  @media @min-sm {
-    font-size: @font-size-base * 1.75;
-  }
+  font-weight:600;
+  // @media @min-sm {
+  //   font-size: @font-size-base * 1.75;
+  // }
   
   // @media @min-lg {
   //   font-size: @font-size-base;
@@ -91,6 +92,9 @@ h6 {
 p {
   font-size: @font-p;
   color: @urban-light;
+  margin: 0;
+  padding: 0;
+  line-height:1.625rem;
   @media @min-sm {
     font-size : @font-size-base * 1.125;
   }
@@ -98,6 +102,11 @@ p {
   // @media @min-lg {
     
   // }
+}
+
+p.graf--condensed {
+  letter-spacing: 0.025rem;
+  line-height: 2rem;
 }
 
 
