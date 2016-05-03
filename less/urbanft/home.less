@@ -116,10 +116,368 @@ body.home .hero .phones img {
     font-size:0.75rem;
 }
 
+
+#lifestyle h3 {
+    margin-top:40px;
+}
+
+#lifestyle .row .col-sm-4 {
+    text-align: center;
+    @media @min-md {
+        text-align: left;
+        padding-left:90px;
+    }
+}
+
+#lifestyle h3 {
+    @media @min-md {
+        text-align: left;
+    }
+}
+
+#engage-customers .container {
+    max-width:1400px;
+    margin: 0 auto;
+}
+
+#engage-customers .flex-row {
+    @media @min-sm {
+        flex-direction: column
+    }
+    
+    @media @min-md {
+        flex-direction: row;
+    }
+}
+
+#engage-customers .flex-row.reverse {
+    @media @min-sm {
+        flex-direction: column;
+    }
+    
+    @media @min-md {
+        flex-direction: row-reverse;
+    }
+}
+
+#engage-customers .pad {
+    @media @min-md{
+        padding-top:80px;
+    }
+}
+
+
+
+
+#engage-customers .ui.button {
+    margin-top:40px;
+    font-weight: 500;
+    text-transform: uppercase;
+} 
+
+#engage-customers .info {
+    text-align: center;
+    @media @min-md {
+        text-align:left;
+        margin-left:80px;
+        margin-left:110px;
+    }
+}
+
+#engage-customers .info img {
+    margin-top:40px;
+    @media @min-md {
+        margin-top:0px;
+    }
+}
+
+#engage-customers .info .text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top:30px;
+    max-width:470px;
+    @media @min-md {
+        text-align: left;
+        margin-left:0;
+        
+    }
+}
+
+#engage-customers .reverse .info {
+    
+    @media @min-md {
+        margin-left:40px; 
+    }
+}
+
 #engage-customers .best-in-class {
     text-align: center;
+    margin-top: 60px;
+    height: 360px;
+    overflow: hidden;
+    
+    @media @min-md {
+        height:478px;
+        overflow: visible;
+    }
 }
 
 #engage-customers .best-in-class img {
-    max-width:240px;
+    max-width:280px;
+    margin-top:0;
 }
+
+#engage-customers .pfm {
+    text-align: center;
+    margin-top: 60px;
+    height: 360px;
+    overflow: hidden;
+    
+    @media @min-md {
+        height:580px;
+    }
+}
+
+#engage-customers .pfm img {
+    max-width:240px;
+    margin-top:0;
+}
+
+#engage-customers .venue-and-deal {
+    text-align: center;
+    margin-top: 60px;
+    // height: 400px;
+    max-height:500px;
+    overflow: hidden;
+    
+    @media @min-md {
+        height:580px;
+    }
+}
+
+#engage-customers .venue-and-deal img {
+    max-width:440px;
+    width:100%;
+    margin-top:0;
+}
+
+
+
+#engage-customers .social-engagement {
+    text-align: center;
+    margin-top: 60px;
+    height: 460px;
+    overflow: hidden;
+    
+    @media @min-md {
+        height:580px;
+    }
+}
+
+#engage-customers .social-engagement img {
+    max-width:324px;
+    margin-top:0;
+}
+
+#create-more .bg {
+    background: url('../../i/create-bg.jpg');
+    background-size: cover;
+}
+
+#create-more .dark:first-child {
+    .setVerticalGradient(rgba(105, 208, 103, 0.87),rgba(4, 135, 181, 0.95));
+}
+
+#create-more .benefits {
+    
+}
+
+#create-more .benefits h5 {
+    margin-bottom:30px;
+    font-size: 0.875rem;
+}
+
+#create-more .benefits img {
+    margin-bottom:40px;
+    
+    @media @min-md {
+        margin: 0;
+    }
+}
+
+#create-more .benefits > div {
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    @media @min-sm {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align:left;
+    }
+    
+    @media @min-md {
+        padding:40px;
+    }
+}
+
+#create-more .benefits > div .text {
+    
+    @media @min-sm {
+        margin-left:40px;
+    }
+}
+
+
+#create-more .flexible-deployment .options {
+    border-radius:10px;
+    overflow:hidden;
+    // background-color:black;
+    width:100%;
+    margin-top:40px;
+    border: 1px solid #F1F1F1;
+    max-width: 1200px;
+}
+
+#create-more .flexible-deployment .options .col-md-4 {
+    position:relative;
+}
+
+#create-more .flexible-deployment .options .cookie {
+    width:68px;
+    height:68px;
+    margin:0 auto;
+    margin:32px 0;
+    display:inline-table;
+    
+    @media @min-md {
+        margin:48px 0;
+    }
+}
+
+#create-more .flexible-deployment .options .cookie span {
+    display:flex;align-items:center;justify-content:center;width:100%;height:100%;background-color:#E0F9CD;border-radius:100%;
+}
+
+#create-more .flexible-deployment .options .cookie > span > span {
+    display:block;width:40px;height:40px;background-color:#69D067;border-radius:100%;font-weight:600;font-size:1.125rem;color:white;line-height:2.2;
+}
+
+#create-more .flexible-deployment .options img {
+    // pad
+    // padding-top:180px;
+    width:120px;
+}
+
+#create-more .flexible-deployment .options .top {
+    text-align: center;
+    margin: 0 10px;
+    
+    @media @min-md {
+        margin: 0 40px;
+        height: 300px;
+    }
+}
+
+#create-more .flexible-deployment .options .top h5 {
+    color: @urban-blue;
+    margin-bottom:30px;
+    font-weight: 600;
+    margin-top:40px;
+}
+
+#create-more .flexible-deployment .options .top p {
+    color: @urban-dark;
+    // margin-bottom:30px;
+    // font-weight: 600;
+}
+
+#create-more .flexible-deployment .options .bottom {
+    text-align: center;
+    padding:20px 10px;
+    margin-bottom:20px;
+    
+    @media @min-md {
+    padding:20px 40px;
+    }
+}
+
+
+#create-more .flexible-deployment .options .bottom p {
+    text-align: center;
+    color: @urban-medium;
+    font-size:1rem;
+}
+
+
+#create-more .launch {
+    margin-top:80px;
+}
+
+#create-more .launch .wrapper {
+    @media @min-md {
+        height:600px;
+        display:flex;
+        align-items: center;
+    }
+    
+}
+
+#create-more .launch .background {
+    background: url('../../i/launch-faster.jpg');
+    background-size:cover;
+}
+
+#create-more .launch .overlay {
+    // .setVerticalGradient(rgba(105, 208, 103, 0.67),rgba(4, 135, 181, 0.65));
+}
+
+#create-more .launch img {
+    width: 40%;
+    
+    @media @min-md {
+        width: 180px;
+        margin: 50px 0;
+    }
+}
+
+#create-more .launch p {
+    margin-top:30px;
+    @media @min-md {
+            margin: 0 60px;
+    }
+}
+
+#pay h4, #pay p {
+    text-align: center;
+    
+    @media @min-md {
+        text-align: left;
+    }
+}
+
+#pay .wrapper {
+    @media @min-md {
+        height:600px;
+        display:flex;
+        align-items: center;
+    }
+}
+#partners {
+    background-color: @urban-blue;
+}
+
+#partners .col-xs-4, #partners .col-xs-3 {
+    height:40px;
+    margin: 30px 0;
+}
+
+#partners img {
+    height:100%;
+    width:auto;
+}
+
