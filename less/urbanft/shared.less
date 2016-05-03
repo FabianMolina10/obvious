@@ -40,13 +40,135 @@
  section p.sub-text {
     text-align: center;
     max-width: 900px;
-    margin: 4.6rem auto 0;
+    margin: 2.6rem auto 0;
     font-weight: 500;
+    font-size:1rem;
     // letter-spacing: .02em;
  }
  
  
- // end 
+ section h2 {
+    text-align: center;
+    color: @urban-medium;
+    margin-top: 3.5rem;
+}
+ 
+section h3 {
+    text-align: center;
+    color: @urban-medium;
+    margin-top: 2.125rem;
+    // margin-top:80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: @urban-blue;
+    color: white;
+
+    // background: url('../../i/photo.jpeg');
+    background: url('../../i/buildings-footer.jpg');
+    background-size: cover;
+    background-position-y: -133px;
+}
+footer .wrapper {
+    @media @md {
+        padding: 0 120px;
+    }
+}
+
+footer .bg {
+    background-color: #2c4141;
+    background: rgb(44, 65, 65);
+    background: -webkit-linear-gradient(rgb(44, 65, 65), rgba(110, 120, 123, 0.92));
+    background: linear-gradient(rgb(44, 65, 65), rgba(110, 120, 123, 0.92));
+    background: linear-gradient(rgba(44, 65, 65, 0.60), rgb(10, 10, 10));
+}
+
+
+footer ul {
+    list-style: none;
+    display:inline;
+    font-size:0.875rem;
+}
+
+footer .links {
+    width: 220px;
+    display: inline-block;
+    display:inline-flex;
+}
+
+footer ul li {
+    // display:inline;
+    line-height: 1.875rem;
+    padding-right: 37px;
+}
+
+footer ul li:hover {
+    color:@urban-green;
+}
+
+// footer h2 {
+//     color:inherit;
+//     font-weight: 600;
+//     letter-spacing: 1.2px;
+//     padding-top:80px;
+// }
+// footer p {
+//     color: inherit;
+//     font-weight: 300;
+//     line-height:1.6;
+//     margin-top:40px;
+
+// }
+
+footer h2 {
+    margin-bottom:40px;    
+}
+
+footer p {
+    margin-bottom:30px;
+}
+
+
+footer .c2a {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    margin-top:80px;
+}
+
+footer .c2a button {
+    marginb-bottom:160px;
+}
+
+
+footer .links {
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ // end ABOVE IS WHAT WE'RE KEEPING
 
 
 
@@ -625,16 +747,8 @@ div.dark hr.text-break {
 div.green {
     background-color:@urban-green;
 }
-section h2 {
-    text-align: center;
-    color: @urban-medium;
-    margin: 1em 0;
-}
-section h3 {
-    text-align: center;
-    color: @urban-medium;
-    margin-top:80px;
-}
+
+
 
 
 div.dark h3, div.dark h4 {
@@ -642,7 +756,7 @@ div.dark h3, div.dark h4 {
 }
 
 section h4 {
-    text-align:left;
+    // text-align:left;
 
     margin-top:20px;
     letter-spacing: 0.5px;
@@ -969,19 +1083,7 @@ section#technology h4 {
 }
 
 
-section#increase #bg {
-   // background: @urban-blue;
-   background: url('../../i/create-bg.jpg');
-   background-size: cover;
-}
 
-section#increase .dark:first-child {
-    // .setVerticalGradient ( @urban-blue,@urban-green);
-
-    // .setGradient( #7b4397,#dc2430);
-    // .setVerticalGradient( #69d067,#0487B5);
-    .setVerticalGradient(rgba(105, 208, 103, 0.87),rgba(4, 135, 181, 0.95));
-}
 
 
 
@@ -1018,65 +1120,65 @@ section#increase .body p {
     line-height: 2;
 }
 
-section#increase .body .column {
+// section#increase .body .column {
 
-    @media @md {
-        padding-left:30px;
-        padding-right:30px;
-    }
-
-
-
-}
-
-section#increase .body .row {
-
-    margin-top:50px;
+//     @media @md {
+//         padding-left:30px;
+//         padding-right:30px;
+//     }
 
 
 
-    // display:flex;
-    text-align: center;
+// }
 
-    @media @md {
-        display:flex;
-        text-align: left;
-        height: 150px;
-        margin-top: 90px;
-    }
+// section#increase .body .row {
 
-    @media @md {
-        display:flex;
-    }
-}
+//     margin-top:50px;
 
-section#increase .body .row .text {
 
-    @media @md
-    {
-    padding-left:40px;
-    padding-right:40px;
 
-    }
-}
+//     // display:flex;
+//     text-align: center;
 
-section#increase .body .row .text .text-content{
+//     @media @md {
+//         display:flex;
+//         text-align: left;
+//         height: 150px;
+//         margin-top: 90px;
+//     }
 
-    margin-top:40px;
+//     @media @md {
+//         display:flex;
+//     }
+// }
 
-    @media @md {
-        margin-top:0px;
-    }
+// section#increase .body .row .text {
 
-}
+//     @media @md
+//     {
+//     padding-left:40px;
+//     padding-right:40px;
 
-section#increase .body .ic {
-    text-align: center;
-    position: relative;
-    top: 0;
-    bottom: 0;
-   // margin: auto; //center vertically
-}
+//     }
+// }
+
+// section#increase .body .row .text .text-content{
+
+//     margin-top:40px;
+
+//     @media @md {
+//         margin-top:0px;
+//     }
+
+// }
+
+// section#increase .body .ic {
+//     text-align: center;
+//     position: relative;
+//     top: 0;
+//     bottom: 0;
+//    // margin: auto; //center vertically
+// }
 
 section#increase .flexible-body {
 
@@ -1278,75 +1380,6 @@ div.inher p {
     text-align: inherit;
 }
 
-
-
-footer {
-    background-color: @urban-blue;
-    color: white;
-
-    // background: url('../../i/photo.jpeg');
-    background: url('../../i/buildings-footer.jpg');
-    background-size: cover;
-    background-position-y: -133px;
-}
-footer .wrapper {
-    @media @md {
-        padding: 0 120px;
-    }
-}
-
-footer .bg {
-    background-color: #2c4141;
-    background: rgb(44, 65, 65);
-    background: -webkit-linear-gradient(rgb(44, 65, 65), rgba(110, 120, 123, 0.92));
-    background: linear-gradient(rgb(44, 65, 65), rgba(110, 120, 123, 0.92));
-    background: linear-gradient(rgba(44, 65, 65, 0.60), rgb(10, 10, 10));
-}
-
-
-footer ul {
-    list-style: none;
-    display:inline;
-}
-
-footer ul li {
-    display:inline;
-    line-height: 3;
-    padding-right: 37px;
-}
-
-footer ul li:hover {
-    color:@urban-green;
-}
-
-footer h2 {
-    color:inherit;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    padding-top:80px;
-}
-footer p {
-    color: inherit;
-    font-weight: 300;
-    line-height:1.6;
-    margin-top:40px;
-
-}
-
-footer .c2a {
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-footer .c2a button {
-    marginb-bottom:160px;
-}
-
-
-footer .links {
-}
 // misc elements
 
 
@@ -1833,35 +1866,6 @@ Main components
 
 
 
-section#offices {
-    padding: 80px 0;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.05);
-}
-
-section#offices .office {
-    padding: 50px 40px;
-}
-
-section#offices .office h5 {
-    font-weight: 600;
-    color:@urban-blue;
-}
-
-section#offices .office address {
-    margin-top:10px;
-}
-
-section#offices .bg {
-    margin: 0px 40px;
-    background:url('../../i/map.png');
-    background-size:cover;
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-
 
 
 
@@ -2097,22 +2101,7 @@ textarea:focus, input:focus{
   background-position: 50% -32px;
 }
 
-section#gen {
-    // background-color:#eee;
-    padding-top:40px;
-    padding-bottom:80px;
-    max-width: 1300px;
-    margin: 0 auto;
-}
 
-section#gen p {
-    // color: white;
-    line-height:2
-}
-
-section#gen h4 {
-    color : #576671;
-}
 
 
 .map-hero { }
@@ -2124,94 +2113,8 @@ section#gen h4 {
     letter-spacing: 4px;
 }
 
-// our--team
-
-section#mission {
-    color:black;
-}
-
-section#mission .clearfix {
-    margin-top:80px;
-}
-section#mission .left, section#mission .right {
-    position:relative;
-}
-section#mission .left h4 {
-    text-align:right;
-}
-
-section#mission .right h4 {
-    text-align: left;
-}
-
-section#mission .right h4, section#mission .left h4 {
-    color: @urban-green;
-    font-weight:600;
-}
-
-section#mission p.wrap {
-    max-width: 291px;
-    margin-top:20px;
-    line-height: 2;
-}
-
-section#mission .left p.wrap {
- float:right;
-}
-
-section#mission .right p.wrap {
- float:left;
-}
-
-section#mission .left {
-    text-align:right;
-
-}
-
-section#leadership {
-
-}
-
-section#leadership .row {
-    max-width:1092px;
-    margin:0 auto;
-    margin-top: 80px;
-}
-
-section#leadership .column {
-    padding-left:50px;
-    padding-right:50px;
-}
-
-section#leadership .column p {
-   color: @urban-medium;
-}
-
-section#leadership .column h5 {
-   margin-top:10px;
-}
 
 
-section#leadership .column .headshot {
-    width:100%;
-    text-align: center;
-}
-
-section#leadership .column .headshot img {
-    width:100%;
-}
-
-section#leadership .column h5 {
-
-}
-section#leadership .column p.jdescription {
-    margin-top:10px;
-}
-
-section#leadership .column hr.text-break {
-    margin: 0;
-    margin: 20px 0;
-}
 
 
 
