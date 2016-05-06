@@ -109,7 +109,7 @@ footer ul {
 }
 
 footer .links {
-    width: 220px;
+    width: 160px;
     display: inline-block;
     display:inline-flex;
 }
@@ -354,6 +354,42 @@ opacity: 1;
 
 }
 
+#app-shell.mobile--opened header.nav-collections .navigation--mobile ul {
+
+}
+
+#app-shell header.nav-collections .navigation--mobile ul {
+    font-size: 1.125rem;
+    margin-left:20px;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#app-shell header.nav-collections .navigation--mobile ul li {
+ display:block;   
+ line-height: 2rem;
+ font-size:inherit;
+ border-bottom: none !important;
+}
+
+#app-shell header.nav-collections .navigation--mobile ul li:last-child {
+ padding:inherit;
+ margin: initial;
+ margin-right: 44px;
+}
+
+#app-shell header.nav-collections .navigation--mobile ul li:hover {
+    border-bottom: none;
+    color:@urban-green;
+}
+
+
+body.legal header.nav-collections .navigation--mobile ul li {
+    color:white;
+}
+
+
 
 
 
@@ -373,6 +409,12 @@ header.nav-collections .logo {
     top: 20px;
     z-index:1000;
 }
+
+#app-shell.mobile--opened header.nav-collections .logo {
+    display:none;   
+}
+
+
 
 
 
@@ -703,6 +745,10 @@ body.news .hero {
     font-weight:100;
     // letter-spacing: -0.5px;
     letter-spacing: 0.02rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    line-height: 30px;
+    padding: 10px 0;
 }
 
 .awrds span {
@@ -1381,6 +1427,63 @@ div.inher p {
 
 // misc elements
 
+.js-menu-link > span {
+  background-color: #f0ebe0;
+  display: block;
+  height: 2px;
+  margin-top: 4px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity .3s,transform .3s;
+}
+.js-menu-link > span:nth-child(1) {
+  margin-top: 0;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.js-menu-link > span {
+  background-color: #f0ebe0;
+  display: block;
+  height: 2px;
+  margin-top: 4px;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity .3s,transform .3s;
+}
+.js-menu-link.active > span {
+  background-color: #8E8E8E;
+}
+.js-menu-link > span:nth-child(3) {
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+/*.js-menu-link:hover > span {
+    background-color: black;
+}*/
+.js-menu-link {
+  cursor: pointer;
+  width: 35px;
+  margin-top: 1px;
+  padding: 0 5px;
+  /*float:right;*/
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  top: 32px;
+}
+#app-shell.mobile--opened .js-menu-link > span:nth-child(1) {
+  -webkit-transform: rotate(45deg) scaleX(0.72);
+  -ms-transform: rotate(45deg) scaleX(0.72);
+  transform: rotate(45deg) scaleX(0.72);
+}
+#app-shell.mobile--opened .js-menu-link > span:nth-child(2) {
+  opacity: 0;
+}
+#app-shell.mobile--opened .js-menu-link > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) scaleX(0.72);
+  -ms-transform: rotate(-45deg) scaleX(0.72);
+  transform: rotate(-45deg) scaleX(0.72);
+}
 
  .js-menurban-link>span {
     background-color: #f0ebe0;
@@ -1438,6 +1541,9 @@ div.inher p {
     right: 10px;
     top: 32px;
 }
+
+
+
 
 
 
@@ -2388,64 +2494,7 @@ section#terms .legal-block ul li {
 
 // careers
 
-section#join-us {
 
-}
-
-.job-listings {
-    margin-top:40px;
-}
-
-.job-listings .job-listing {
-    margin: 0 20px;
-    margin-top:40px;
-}
-
-.job-listings .team-category {
-    // font-weight: 600;
-    padding-bottom: 10px;
-    border-bottom: 1px solid @urban-blue;
-    margin-bottom: 15px;
-    color: #333333;display: block;
-    text-align: left;
-    padding-left:20px;
-}
-
-.job-listings ul {
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top:30px;
-    padding-left:20px;
-}
-
-.job-listings ul li {
-    color: #666666;
-    margin-bottom: 18px;
-}
-
-.job-listings ul li a {
-    color: #576671;
-    // font-weight: 700;
-    transition: all 0.1s ease-in-out;
-}
-
-.job-listing ul li a:hover {
-    color: @urban-blue;
-}
-
-.job-listings ul li p {
-    font-weight: 400;
-    line-height: 27px;
-    color: #A5A5A5;
-    font-weight:600;
-}
-
-.job-listings ul li p span.light {
-    color: @urban-green;
-    font-weight:600;
-}
 
 
 // individual posting
